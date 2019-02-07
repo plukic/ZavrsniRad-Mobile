@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Base application theme. -->
+    <style name="COTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="materialColorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="materialColorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/dark_purple</item>
+        <item name="android:textColorSecondary">@color/light_purple</item>
+        <item name="list_divider">@style/divider_light</item>
+        <item name="gradient">@style/gradient_gray_background</item>
+        <item name="gradient_rounded_top">@style/gradient_gray_background_rounded_top</item>
+        <item name="btn_rounded_main_action">@style/btn_rounded_full_width_main_action</item>
+        <item name="btn_transparent">@style/button_secondary_transparent</item>
+        <item name="rounded_entry">@style/rounded_entry_wh</item>
+        <item name="help_request_category">@style/category_icon_panic_modal</item>
+
+        <item name="text_title">@style/text_title_co</item>
+        <item name="text_subtitle">@style/text_subtitle_co</item>
+        <item name="text_content">@style/text_normal_co</item>
+        <item name="branded_logo">@style/branded_logo_image_co</item>
+
+        <item name="text_title_small">@style/title_small_co</item>
+        <item name="text_subtitle_small">@style/subtitle_small</item>
+        <item name="background_primary">#ffffff</item>
+        <item name="background_primary_transparent">#94ffffff</item>
+        <item name="background_secondary">#FFFFFF</item>
+        <item name="tabs_style">@style/tabs_style_co</item>
+        <item name="toolbar_style">@style/toolbar_style_co</item>
+
+        <item name="primaryTextColor">@color/dark_purple</item>
+        <item name="secondaryTextColor">@color/light_purple</item>
+        <item name="login_screen">@drawable/loginscreen</item>
+        <item name="colorSplashScreen">@color/colorAccent</item>
+
+
+    </style>
+    <!-- Base application theme. -->
+    <style name="BMWTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#0299DC</item>
+        <item name="materialColorPrimary">#0299DC</item>
+        <item name="colorPrimaryDark">#103142</item>
+        <item name="materialColorPrimaryDark">#103142</item>
+        <item name="colorAccent">#80BAF5</item>
+        <item name="android:textColorPrimary">@color/dark_purple</item>
+        <item name="android:textColorSecondary">@color/light_purple</item>
+        <item name="list_divider">@style/divider_light</item>
+        <item name="gradient">@style/gradient_gray_background</item>
+        <item name="gradient_rounded_top">@style/gradient_gray_background_rounded_top</item>
+        <item name="btn_rounded_main_action">@style/btn_rounded_full_width_main_action</item>
+        <item name="btn_transparent">@style/button_secondary_transparent</item>
+        <item name="rounded_entry">@style/rounded_entry_wh</item>
+        <item name="help_request_category">@style/category_icon_panic_modal</item>
+
+        <item name="text_title">@style/text_title_co</item>
+        <item name="text_subtitle">@style/text_subtitle_co</item>
+        <item name="text_content">@style/text_normal_co</item>
+        <item name="branded_logo">@style/branded_logo_image_co</item>
+
+        <item name="text_title_small">@style/title_small_co</item>
+        <item name="text_subtitle_small">@style/subtitle_small</item>
+        <item name="background_primary">#ffffff</item>
+        <item name="background_secondary">#FFFFFF</item>
+        <item name="tabs_style">@style/tabs_style_co</item>
+        <item name="toolbar_style">@style/toolbar_style_co</item>
+
+        <item name="primaryTextColor">@color/dark_purple</item>
+        <item name="secondaryTextColor">@color/light_purple</item>
+        <item name="login_screen">@drawable/loginscreen</item>
+        <item name="colorSplashScreen">@color/colorAccent</item>
+
+    </style>
+    <!-- Base application theme. -->
+    <style name="NightTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#242728</item>
+        <item name="materialColorPrimary">#242728</item>
+        <item name="colorPrimaryDark">#1D1F20</item>
+        <item name="materialColorPrimaryDark">#1D1F20</item>
+        <item name="colorAccent">#6AA1CE</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:textColorSecondary">#686868</item>
+        <item name="list_divider">@style/divider_light_dark</item>
+        <item name="gradient">@style/gradient_gray_background_dark</item>
+        <item name="gradient_rounded_top">@style/gradient_gray_background_rounded_top_dark</item>
+        <item name="btn_rounded_main_action">@style/btn_rounded_full_width_main_action</item>
+        <item name="btn_transparent">@style/button_secondary_transparent</item>
+        <item name="rounded_entry">@style/rounded_entry_wh</item>
+        <item name="help_request_category">@style/category_icon_panic_modal</item>
+
+        <item name="text_title">@style/text_title_co</item>
+        <item name="text_subtitle">@style/text_subtitle_co</item>
+        <item name="text_content">@style/text_normal_co</item>
+        <item name="branded_logo">@style/branded_logo_image_co</item>
+
+        <item name="text_title_small">@style/title_small_co</item>
+        <item name="text_subtitle_small">@style/subtitle_small</item>
+        <item name="background_primary">#171819</item>
+        <item name="background_primary_transparent">#5d171819</item>
+        <item name="background_secondary">#e7171819</item>
+        <item name="tabs_style">@style/tabs_style_co</item>
+        <item name="toolbar_style">@style/toolbar_style_co</item>
+
+        <item name="primaryTextColor">#FFFFFF</item>
+        <item name="secondaryTextColor">#686868</item>
+        <item name="login_screen">@drawable/login_screen_dark</item>
+        <item name="colorSplashScreen">@color/colorAccent</item>
+
+    </style>
+
+
+
+    <!--<style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />-->
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="divider_light_dark" parent="divider_light">
+        <item name="android:background">#2C2D2E</item>
+    </style>
+
+    <style name="gradient_gray_background_rounded_top_dark">
+        <item name="android:background">@drawable/gray_gradient_background_rounded_top_dark</item>
+    </style>
+
+</resources>

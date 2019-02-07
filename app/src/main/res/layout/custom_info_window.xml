@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet_custom_info_window"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?background_primary"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_marker_title"
+        android:layout_width="match_parent"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="Lokacija  vašeg vozila"
+        android:textColor="?primaryTextColor"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_marker_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        android:text="Uz pomoc ovoga najbrze dodjite do svog vozila test test etset"
+        android:textColor="?secondaryTextColor"
+        app:layout_constraintTop_toBottomOf="@id/tv_marker_title" />
+
+    <TextView
+        android:id="@+id/tv_navigate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_selectable_map_info_view_button"
+        android:foreground="?selectableItemBackground"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:text="Navigiraj"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_marker_description" />
+
+    <TextView
+        android:id="@+id/tv_remove_parking_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:foreground="?selectableItemBackground"
+        android:paddingBottom="8dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:text="Ukloni lokaciju"
+        android:textColor="?primaryTextColor"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/tv_navigate"
+        app:layout_constraintRight_toLeftOf="@id/tv_navigate"
+        app:layout_constraintTop_toBottomOf="@id/tv_marker_description" />
+</android.support.constraint.ConstraintLayout>

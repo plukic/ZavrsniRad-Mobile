@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="android:textColorPrimary">@color/dark_purple</item>-->
+        <!--<item name="android:textColorSecondary">@color/light_purple</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+
+    <!--</style>-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+        <!--<item name="android:textColorPrimary">@color/dark_purple</item>-->
+        <!--<item name="android:textColorSecondary">@color/light_purple</item>-->
+        <!--&lt;!&ndash;<item name="android:statusBarColor">@android:color/transparent</item>&ndash;&gt;-->
+        <!--&lt;!&ndash;<item name="android:windowLightStatusBar">true</item>&ndash;&gt;-->
+
+        <!--<item name="list_divider">@color/divider</item>-->
+        <!--<item name="gradient">@style/gradient_gray_background</item>-->
+        <!--<item name="gradient_rounded_top">@style/gradient_gray_background_rounded_top</item>-->
+    <!--</style>-->
+
+</resources>

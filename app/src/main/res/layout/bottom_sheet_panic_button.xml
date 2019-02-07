@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_sheet"
+    style="?gradient"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/cl_crash_detection_parent"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline_vertical_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.6" />
+
+        <TextView
+            android:id="@+id/tv_crash_detection_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/ic_icons8_ekg_car_blue"
+            android:foreground="?selectableItemBackground"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/label_crash_detection"
+            android:textColor="?secondaryTextColor"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_park_my_car"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:drawableTop="@drawable/ic_icons8_marker"-->
+            <!--android:foreground="?selectableItemBackground"-->
+            <!--android:gravity="center"-->
+            <!--android:padding="10dp"-->
+            <!--android:text="@string/label_park_my_car"-->
+            <!--android:textColor="?secondaryTextColor"-->
+            <!--android:textSize="15sp"-->
+            <!--app:layout_constraintBottom_toBottomOf="parent"-->
+            <!--app:layout_constraintLeft_toRightOf="@id/tv_crash_detection_toggle"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+
+        <FrameLayout
+            android:id="@+id/fl_help_and_progressbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            app:layout_constraintBottom_toTopOf="@id/guideline_vertical_center">
+
+            <TextView
+                style="?text_title"
+                android:text="@string/label_panic_modal_help" />
+
+            <ProgressBar
+                android:id="@+id/pb_bottom_sheet"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/tv_panic_select_category_label"
+            style="?text_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/label_panic_model_select_category"
+            app:layout_constraintTop_toBottomOf="@id/guideline_vertical_center" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="?background_secondary"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_malfunction_category"
+                style="?help_request_category"
+
+                android:drawableTop="@drawable/icons8_sneeze_24"
+                android:text="@string/label_panic_modal_allergies" />
+
+            <TextView
+                android:id="@+id/tv_accident_category"
+                style="?help_request_category"
+                android:drawableTop="@drawable/ic_add_black_24dp"
+                android:text="@string/label_panic_modal_accident" />
+
+            <TextView
+                android:id="@+id/tv_other_category"
+                style="?help_request_category"
+                android:drawableTop="@drawable/ic_info_outline_black_24dp"
+                android:text="@string/label_panic_modal_info" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        style="?text_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/label_pick_panic_category" />
+    <!--<Button-->
+    <!--android:id="@+id/btn_crash_detection_enable"-->
+    <!--style="?btn_rounded_main_action"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:layout_marginLeft="5dp"-->
+    <!--android:layout_marginRight="5dp"-->
+    <!--android:text="@string/start_crash_detection"/>-->
+
+</LinearLayout>

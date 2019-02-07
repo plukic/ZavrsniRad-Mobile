@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?background_primary"
+    android:foreground="?selectableItemBackground"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_title"
+        style="?text_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        android:textAllCaps="true"
+        android:gravity="center_vertical"
+        android:text="@string/lbl_help_request_response_contact_phone_number_lbl" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        style="?text_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="?primaryTextColor"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        tools:text="+387 63 103 730" />
+    <View
+        style="?list_divider"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        />
+
+</LinearLayout>

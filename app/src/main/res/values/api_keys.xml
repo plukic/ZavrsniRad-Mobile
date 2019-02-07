@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="client_id" templateMergeStrategy="preserve" translatable="false">db1b1935-f950-4482-b9a8-021b45619680</string>
+    <string name="weather_id" templateMergeStrategy="preserve" translatable="false">2456a7f24ce80f0712836e037b6260d1</string>
+</resources>

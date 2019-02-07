@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#d30000</color>
+    <color name="colorAccent">#dc0000</color>
+    <color name="list_header_gray">#F5F5F5</color>
+    <color name="redLogoutLabel">#dc0000</color>
+    <color name="divider">#1e000000</color>
+    <color name="color_light_gray">#78849E</color>
+    <color name="light_blue">#3ACCE1</color>
+    <color name="blue">#3F93F9</color>
+    <color name="purple">#6C5CFB</color>
+    <color name="divider_light">#F4F4F6</color>
+    <color name="gradientCenterGray">#f7f7f7</color>
+    <color name="gradientEndGray">#F7F7FA</color>
+    <color name="gradientCenterGrayDark">#181818</color>
+    <color name="gradientEndGrayDark">#1d1d1d</color>
+    <color name="dark_purple">#475062</color>
+    <color name="light_purple">#78829C</color>
+</resources>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?gradient_rounded_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:behavior_overlapTop="16dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.highways.HighwaysActivity"
+    tools:showIn="@layout/activity_highways">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <TextView
+            style="?text_title"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/lbl_tollbooths" />
+
+        <TextView
+            style="?text_subtitle"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/lbl_select_highway" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="?background_secondary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="1dp"
+            app:cardUseCompatPadding="true">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_select_highway"
+                    style="@style/title_small_co"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:text="@string/lbl_highway"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_highway"
+                    style="@style/subtitle_small"
+                    android:paddingBottom="16dp"
+                    app:layout_constraintLeft_toLeftOf="@+id/lbl_select_highway"
+                    app:layout_constraintRight_toLeftOf="@+id/btn_clear_highway"
+                    app:layout_constraintTop_toBottomOf="@id/lbl_select_highway"
+                    tools:text="Dionica Sarajevo - Zenica  jako duga zenica opet jako duga" />
+
+                <FrameLayout
+                    android:id="@+id/fl_select_highway"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="?selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btn_clear_highway"
+                    app:layout_constraintRight_toLeftOf="@id/btn_clear_highway"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_clear_highway"
+                    style="@style/button_clear_co"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_close_black_24dp" />
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            app:cardBackgroundColor="?background_secondary"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="1dp"
+            app:cardUseCompatPadding="true">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/lbl_tollboth_enter"
+                    style="@style/title_small_co"
+                    android:text="@string/lbl_tollboth_enter"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_tollbooth_enter_select"
+                    style="@style/subtitle_small"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_clear_tollboth_enter"
+                    app:layout_constraintLeft_toLeftOf="@id/lbl_tollboth_enter"
+                    app:layout_constraintRight_toLeftOf="@+id/btn_clear_tollboth_enter"
+                    app:layout_constraintStart_toStartOf="@id/lbl_tollboth_enter"
+                    app:layout_constraintTop_toBottomOf="@id/lbl_tollboth_enter"
+                    tools:text="Jako dugi teskt je ovo za sarajevo toolbooth Sarajevo" />
+
+                <FrameLayout
+                    android:id="@+id/fl_select_enter_tollboth"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="?selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_clear_tollboth_enter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/btn_clear_tollboth_enter"
+                    style="@style/button_clear_co"
+                    app:layout_constraintBottom_toTopOf="@+id/view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_close_black_24dp" />
+
+                <View
+                    android:id="@+id/view"
+                    style="?list_divider"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginRight="32dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_tollbooth_enter_select" />
+
+
+                <TextView
+                    android:id="@+id/lbl_tollboth_exit"
+                    style="?text_title_small"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginStart="32dp"
+                    android:text="@string/lbl_tollboth_exit"
+                    app:layout_constraintLeft_toLeftOf="@id/lbl_tollboth_enter"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view" />
+
+                <TextView
+                    android:id="@+id/tv_tollbooth_exit_select"
+                    style="?text_subtitle_small"
+                    android:paddingBottom="16dp"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_clear_tollboth_exit"
+                    app:layout_constraintLeft_toLeftOf="@id/lbl_tollboth_enter"
+                    app:layout_constraintLeft_toRightOf="@+id/btn_clear_tollboth_exit"
+                    app:layout_constraintStart_toStartOf="@id/lbl_tollboth_enter"
+                    app:layout_constraintTop_toBottomOf="@id/lbl_tollboth_exit"
+                    tools:text="Zenica" />
+
+                <FrameLayout
+                    android:id="@+id/fl_select_exit_tollboth"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="?selectableItemBackground"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_clear_tollboth_exit"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
+
+                <ImageButton
+                    android:id="@+id/btn_clear_tollboth_exit"
+                    style="@style/button_clear_co"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view"
+                    app:srcCompat="@drawable/ic_close_black_24dp" />
+
+            </android.support.constraint.ConstraintLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="?btn_rounded_main_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:text="@string/submit"
+            />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

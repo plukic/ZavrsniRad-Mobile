@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="list_divider" format="reference"/>
+    <attr name="gradient" format="reference"/>
+    <attr name="gradient_rounded_top" format="reference"/>
+    <attr name="btn_rounded_main_action" format="reference"/>
+    <attr name="btn_transparent" format="reference"/>
+    <attr name="rounded_entry" format="reference"/>
+
+
+    <attr name="help_request_category" format="reference"/>
+
+    <attr name="text_title" format="reference"/>
+    <attr name="text_subtitle" format="reference"/>
+    <attr name="text_content" format="reference"/>
+
+    <attr name="text_title_small" format="reference"/>
+    <attr name="text_subtitle_small" format="reference"/>
+
+    <attr name="branded_logo" format="reference"/>
+
+    <attr name="background_primary" format="color"/>
+    <attr name="background_primary_transparent" format="color"/>
+    <attr name="background_secondary" format="color"/>
+    <attr name="materialColorPrimary" format="color"/>
+    <attr name="materialColorPrimaryDark" format="color"/>
+
+    <attr name="toolbar_style" format="reference"/>
+    <attr name="tabs_style" format="reference"/>
+
+    <attr name="primaryTextColor" format="color"/>
+    <attr name="secondaryTextColor" format="color"/>
+    <attr name="colorSplashScreen" format="color"/>
+    <attr name="login_screen" format="reference"/>
+
+</resources>

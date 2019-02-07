@@ -1,0 +1,65 @@
+import groovy.json.JsonSlurper
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.2.1'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+        classpath 'com.google.gms:google-services:4.1.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    def jsonFile = file('versioning.json')
+    def parsedJson = new JsonSlurper().parseText(jsonFile.text)
+
+    myVersionCode =parsedJson.versionCode
+    myVersionName= parsedJson.versionName
+
+    // Sdk and tools
+    minSdkVersion = 16
+    targetSdkVersion = 28
+    compileSdkVersion = 28
+    buildToolsVersion = '28.0.3'
+    constraintLayoutVersion ='1.1.2'
+
+    // App dependencies
+    supportLibraryVersion = '28.0.0'
+    calligraphyVersion = '2.2.0'
+
+
+    dagger2Version = '2.16'
+    rxjava2Version = '2.1.13'
+    rxandroidVersion = '2.0.2'
+    butterKnifeVersion = '8.8.1'
+    timberVersion = '4.6.1'
+
+    //retorift
+    retrofit2Version ='2.4.0'
+    retrofi2rxJava2Version='2.4.0'
+    retrofit2GsonVersion='2.4.0'
+
+
+    room_version = '1.1.1'
+    glideVersion='4.7.1'
+}

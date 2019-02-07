@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ba.ito.assistance">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <application
+        android:name=".AssistanceApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/NightTheme">
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.password_reset.PasswordResetActivity" />
+        <activity
+            android:name=".ui.splash_screen.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.awareness.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".ui.road_conditions.RoadConditionsActivity"
+            android:label="@string/title_activity_road_conditions"
+            android:parentActivityName=".ui.home.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ba.ito.assistance.ui.home.HomeActivity" />
+        </activity>
+        <activity android:name=".ui.nearest_gas_stations.NearestGasStationsActivity" />
+        <activity
+            android:name=".ui.gas_stations.GasStationActivity"
+            android:label="@string/title_activity_gas_stations"
+            android:parentActivityName=".ui.home.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ba.ito.assistance.ui.home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.highways.HighwaysActivity"
+            android:label="@string/title_activity_highways"
+            android:parentActivityName=".ui.home.HomeActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ba.ito.assistance.ui.home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.highway_select.HighwaySelectActivity"
+            android:label="@string/title_activity_highway_select"
+            android:parentActivityName=".ui.highways.HighwaysActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ba.ito.assistance.ui.highways.HighwaysActivity" />
+        </activity>
+        <activity android:name=".ui.highway_prices.HighwayPricesActivity" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d559ed8540efa7cb05e03c42eb1dd0875183a360" />
+
+        <service
+            android:name=".ui.crash_detection_service.CrashDetectionService"
+            android:enabled="true"
+            android:exported="false" />
+
+        <receiver
+            android:name=".ui.crash_detection_service.CrashDetectionToggleBroadcastReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <service
+            android:name=".ui.crash_detection_service.DetectedActivitiesIntentService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".ui.crash_detection_service.CrashDetectedService" />
+        <service android:name=".services.firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".ui.cameras.CamerasActivity"
+            android:label="@string/title_activity_cameras"
+            android:parentActivityName=".ui.home.HomeActivity"
+            android:theme="@style/NightTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ba.ito.assistance.ui.home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.user_information.UserInformationActivity"
+            android:label="@string/title_activity_user_information"
+            android:parentActivityName=".ui.home.HomeActivity"
+            android:theme="@style/NightTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ba.ito.assistance.ui.home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.emergency_contacts.EmergencyContactsActivity"
+            android:label="@string/title_activity_emergency_contacts"
+            android:parentActivityName=".ui.home.HomeActivity"
+            android:theme="@style/NightTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ba.ito.assistance.ui.home.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:label="@string/title_activity_register"
+            android:parentActivityName=".ui.login.LoginActivity"
+            android:theme="@style/NightTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ba.ito.assistance.ui.login.LoginActivity" />
+        </activity>
+    </application>
+
+</manifest>

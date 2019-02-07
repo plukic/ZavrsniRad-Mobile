@@ -1,0 +1,166 @@
+<resources>
+
+    <style name="gradient_gray_background">
+        <item name="android:background">@drawable/gray_gradient_background</item>
+    </style>
+
+    <style name="gradient_gray_background_rounded_top">
+        <item name="android:background">@drawable/gray_gradient_background_rounded_top</item>
+    </style>
+
+    <style name="TextTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/dark_purple</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="TextSubtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/light_purple</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="category_icon_panic_modal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">@color/color_light_gray</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="rounded_entry_wh">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/rounded_entry</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColorHint">@color/light_purple</item>
+        <item name="android:textColor">@color/dark_purple</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="btn_rounded_full_width_main_action">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/rounder_selectable_button</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="button_secondary_transparent">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="text_title_co">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?primaryTextColor</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="text_subtitle_co">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?secondaryTextColor</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="text_normal_co">
+        <item name="android:textColor">?secondaryTextColor</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="branded_logo_image_co">
+        <item name="android:src">@drawable/branded_logo_co_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">190dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="title_small_co">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textColor">?secondaryTextColor</item>
+
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="subtitle_small">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">?primaryTextColor</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+    </style>
+
+    <style name="button_clear_co">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:background">?selectableItemBackground</item>
+        <item name="android:tint">@color/dark_purple</item>
+    </style>
+    `
+
+    <style name="divider_light">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/divider_light</item>
+
+    </style>
+
+    <style name="tabs_style_co">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">?materialColorPrimary</item>
+        <item name="tabIndicatorColor">@color/colorAccent</item>
+        <item name="tabMode">scrollable</item>
+        <item name="tabSelectedTextColor">@color/colorAccent</item>
+        <item name="tabTextColor">?secondaryTextColor</item>
+    </style>
+
+    <style name="toolbar_style_co" parent="Theme.AppCompat">
+        <item name="android:textColorPrimary">?primaryTextColor</item>
+        <item name="android:background">?materialColorPrimary</item>
+        <item name="android:textColorSecondary">?secondaryTextColor</item>
+        <item name="actionMenuTextColor">?primaryTextColor</item>
+    </style>
+
+    <style name="gradient_gray_background_dark" parent="gradient_gray_background">
+        <item name="android:background">?background_primary</item>
+    </style>
+
+    <style name="gradient_gray_background_dark_rounded" parent="gradient_gray_background">
+        <item name="android:background">?background_primary</item>
+    </style>
+
+
+    <style name="AlertDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">?background_primary</item>
+        <item name="android:textColorPrimary">?primaryTextColor</item>
+        <item name="android:textColorSecondary">?secondaryTextColor</item>
+        <item name="textColorAlertDialogListItem">?primaryTextColor</item>
+    </style>
+
+    <style name="NightTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="NightTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
